@@ -4,7 +4,7 @@ Current Team Lead: Joseph
 Current Co-Lead: Adrian
 Other Members:
 Andrew
-Chandler
+Chanler
 Juan
 Kennedy
 Lynny
