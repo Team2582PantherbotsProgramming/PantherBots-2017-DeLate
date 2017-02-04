@@ -66,7 +66,7 @@ void IntakeGear::ThrowOut()
 	bottomRoller->Set(-.6);
 }
 
-//Nothing happens
+//It stops
 void IntakeGear::Stop()
 {
 	topRoller->Set(0.0);
