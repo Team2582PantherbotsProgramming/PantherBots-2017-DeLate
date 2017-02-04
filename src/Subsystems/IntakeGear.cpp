@@ -52,25 +52,28 @@ void IntakeGear::InitDefaultCommand() {
 // Put methods for controlling this subsystem
 // here. Call these from Commands.
 
+//Intake the gear
 void IntakeGear::GetGear()
 {
 	topRoller->Set(.6);
 	bottomRoller->Set(.6);
 }
 
-
+//outtake the gear
 void IntakeGear::ThrowOut()
 {
 	topRoller->Set(-.6);
 	bottomRoller->Set(-.6);
 }
 
+//Nothing happens
 void IntakeGear::Stop()
 {
 	topRoller->Set(0.0);
 	bottomRoller->Set(0.0);
 }
 
+//Tells if the gear is in
 bool IntakeGear::LaserInfo()
 {
 	return !(laser->Get());
