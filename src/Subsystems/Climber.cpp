@@ -41,12 +41,14 @@ void Climber::InitDefaultCommand() {
 // Put methods for controlling this subsystem
 // here. Call these from Commands.
 
+//The robot is climbing
 void Climber::ToTheTop()
 {
 	climb1->Set(.25);
 	climb2->Set(.25);
 }
 
+//the robot stops climbing
 void Climber::Stop()
 {
 	climb1->Set(0.0);
