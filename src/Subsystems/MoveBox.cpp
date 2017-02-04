@@ -42,6 +42,7 @@ void MoveBox::InitDefaultCommand() {
 // Put methods for controlling this subsystem
 // here. Call these from Commands.
 
+//the box moves up
 void MoveBox::UpBox()
 {
 	RobotMap::moveBoxDoubleSolenoid1->Set(DoubleSolenoid::kForward);
@@ -49,6 +50,7 @@ void MoveBox::UpBox()
 	BoxState = false;
 }
 
+//the box moves down
 void MoveBox::DownBox()
 {
 	RobotMap::moveBoxDoubleSolenoid1->Set(DoubleSolenoid::kReverse);
