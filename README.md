@@ -1,12 +1,13 @@
 # PantherBots-2017-DeLate
 2017's robot for competition
-Current Team Lead: Joseph
-Current Co-Lead: Adrian
+Current Team Lead: Joseph Muir
+Current Co-Lead: Adrian Garcia
 Other Members:
-Andrew
-Chanler
-Juan
-Kennedy
-Lynny
-Shaurya
+Andrew Adams
+Benji Oliveros
+Chanler Eckels
+Juan Barron
+Kennedy Eckels
+Lynny Griffith
+Shaurya Kumar
 Saul
