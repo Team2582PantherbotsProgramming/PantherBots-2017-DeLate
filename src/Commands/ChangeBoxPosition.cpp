@@ -26,12 +26,12 @@ ChangeBoxPosition::ChangeBoxPosition(): Command() {
 
 // Called just before this Command runs the first time
 void ChangeBoxPosition::Initialize() {
-	bool test = Robot::moveBox->BoxState;
-		if (test == false)
+	test = Robot::moveBox->BoxState;
+		if (test == true)
 		{
 			Robot::moveBox->UpBox();
 		}
-		else if (test == true)
+		else if (test == false)
 		{
 			Robot::moveBox->DownBox();
 		}

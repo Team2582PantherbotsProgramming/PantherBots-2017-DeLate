@@ -42,7 +42,6 @@ void MoveIntake::InitDefaultCommand() {
 // Put methods for controlling this subsystem
 // here. Call these from Commands.
 
-//moves the gear up
 void MoveIntake::UpIntake()
 {
 	RobotMap::moveIntakeDoubleSolenoid1->Set(DoubleSolenoid::kForward);
@@ -50,7 +49,6 @@ void MoveIntake::UpIntake()
 	IntakeState = true;
 }
 
-//moves the gear down
 void MoveIntake::DownIntake()
 {
 	RobotMap::moveIntakeDoubleSolenoid1->Set(DoubleSolenoid::kReverse);

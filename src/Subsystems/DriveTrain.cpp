@@ -83,7 +83,7 @@ void DriveTrain::Stop()
 
 double DriveTrain::GetPower()
 {
-	power = SmartDashboard::GetNumber("Power", power);
+	power = SmartDashboard::GetNumber("GyroDrivePower", power);
 	return power;
 }
 

@@ -76,19 +76,19 @@ void RobotMap::init() {
     lw->AddSensor("IntakeGear", "Laser", intakeGearLaser);
     
     //Warning, the two modules in robot builder are different!
-moveIntakeDoubleSolenoid1.reset(new DoubleSolenoid(0, 0, 7));
+moveIntakeDoubleSolenoid1.reset(new DoubleSolenoid(0, 7, 0));
     lw->AddActuator("MoveIntake", "Double Solenoid 1", moveIntakeDoubleSolenoid1);
-    
+
     //Warning, the two modules in robot builder are different!
-moveIntakeDoubleSolenoid2.reset(new DoubleSolenoid(1, 1, 6));
+moveIntakeDoubleSolenoid2.reset(new DoubleSolenoid(0, 4, 3));
     lw->AddActuator("MoveIntake", "Double Solenoid 2", moveIntakeDoubleSolenoid2);
     
     //Warning, the two modules in robot builder are different!
-moveBoxDoubleSolenoid1.reset(new DoubleSolenoid(2, 2, 5));
+moveBoxDoubleSolenoid1.reset(new DoubleSolenoid(0, 6, 1));
     lw->AddActuator("MoveBox", "Double Solenoid 1", moveBoxDoubleSolenoid1);
     
     //Warning, the two modules in robot builder are different!
-moveBoxDoubleSolenoid2.reset(new DoubleSolenoid(3, 3, 4));
+moveBoxDoubleSolenoid2.reset(new DoubleSolenoid(0, 5, 2));
     lw->AddActuator("MoveBox", "Double Solenoid 2", moveBoxDoubleSolenoid2);
     
     climberClimb1.reset(new Spark(4));

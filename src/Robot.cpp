@@ -52,6 +52,17 @@ void Robot::RobotInit() {
 	   	{
 	   		SmartDashboard::PutString("Gear State:", "No Gear");
 	   	}
+
+	SmartDashboard::PutNumber("kP", Robot::driveTrain->kP);
+	SmartDashboard::PutNumber("AutoTime", Robot::driveTrain->AutoTime);
+	SmartDashboard::PutNumber("GyroPower", Robot::driveTrain->power);
+	SmartDashboard::PutNumber("TurnAngle", Robot::driveTrain->turnAngle);
+	SmartDashboard::PutNumber("GyroAngle", Robot::driveTrain->DisplayAngle());
+	SmartDashboard::PutNumber("AutoDelay", Robot::driveTrain->GetDelay());
+	SmartDashboard::PutNumber("Ultrasonic", Robot::driveTrain->GetDistance());
+	SmartDashboard::PutNumber("ClimberPower", Robot::climber->ClimberPower());
+	SmartDashboard::PutString("Ship is", Robot::driveTrain->GetDirection());
+
   }
 
 /**
